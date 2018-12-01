@@ -74,12 +74,15 @@ def bin2string(bitstream):
     #Check if bitstream only exists of 0b, this will be when there is no file created and the counter has been reached.
     if bitstream == "0b":
         main()
-    #Decode bitstream from bits to characters.
-    n = int(bitstream, 2)
-    decoded = n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
-    print("cleartext: ", decoded)
-    print(bitstream)
-    exit()
+    try:
+        #Decode bitstream from bits to characters.
+        n = int(bitstream, 2)
+        decoded = n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
+        print("cleartext: ", decoded)
+        print(bitstream)
+        exit()
+    except AttributeError:
+        print("You must change the timers, because we are not receiving a valid input.\nThe timers can be found in the reader.py script.\n")
 
 
 def main():
