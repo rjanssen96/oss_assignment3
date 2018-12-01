@@ -7,13 +7,13 @@ def my_function(inputtt):
 #        print(x)
 
 def make_file():
-    f = open("./rico/hidden.txt", "w+")
+    f = open("/securechannel/files/hidden.txt", "w+")
     f.write("This is line %d\r\n")
     f.close()
     print("File made!")
 
 def remove_file():
-    os.remove("./rico/hidden.txt")
+    os.remove("/securechannel/hidden.txt")
     print("File removed!")
 
 # gather the string that needs to be converted
