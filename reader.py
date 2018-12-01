@@ -13,7 +13,7 @@ def make_file():
     print("File made!")
 
 def remove_file():
-    os.remove("/securechannel/hidden.txt")
+    os.remove("/securechannel/files/hidden.txt")
     print("File removed!")
 
 # gather the string that needs to be converted
