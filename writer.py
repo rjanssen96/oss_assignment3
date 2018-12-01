@@ -13,7 +13,7 @@ def check_folder(folder):
     bitstream = '0b'
 
     while 1:
-        time.sleep(0.50)
+        time.sleep(0.11)
         #Check every file in the folder. If the file is hidden.txt, add +1 to the counter
         #If the hidden.txt file does not exists then the remove counter will be +1.
         #If the remove counter is 25 the binary string will be translated to a readable text.
@@ -49,7 +49,7 @@ def check_folder(folder):
             print("Hello i'm removed")
             if removed[0] == "hidden.txt":
 
-                if counter > 50:
+                if counter > 5:
                     bitstream = bitstream + "0"
                     removed_counter = 0
                     print("Bitstream: ", bitstream)
