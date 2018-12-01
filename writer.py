@@ -1,5 +1,5 @@
 import os, time
-path_to_watch = "./rico"
+path_to_watch = "/securechannel/files/"
 
 def check_folder(folder):
     counter = 0
