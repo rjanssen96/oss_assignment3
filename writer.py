@@ -83,9 +83,10 @@ def bin2string(bitstream):
         exit()
     except AttributeError:
         print("You must change the timers, because we are not receiving a valid input.\nThe timers can be found in the reader.py script.\n")
+        exit()
     except UnicodeDecodeError:
         print("You must change the timers, because we are not receiving a valid input.\nThe timers can be found in the reader.py script.\n")
-
+        exit()
 
 def main():
     check_folder(folder=path_to_watch)
