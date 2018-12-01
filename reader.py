@@ -35,6 +35,7 @@ for char in binary:
         make_file()
 
         begin = time.clock()
+        #Timer 1, change if translating does not work or if you do not receive the entire bitstream
         my_function(600000)
 
         remove_file()
@@ -52,6 +53,7 @@ for char in binary:
         make_file()
 
         begin = time.clock()
+        ##Timer 2, change if translating does not work or if you do not receive the entire bitstream
         my_function(5000000)
 
         remove_file()
