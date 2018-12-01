@@ -35,7 +35,7 @@ for char in binary:
         make_file()
 
         begin = time.clock()
-        my_function(800000)
+        my_function(1500000)
 
         remove_file()
 
@@ -52,7 +52,7 @@ for char in binary:
         make_file()
 
         begin = time.clock()
-        my_function(4000000)
+        my_function(10000000)
 
         remove_file()
 
